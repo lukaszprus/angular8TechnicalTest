@@ -1,18 +1,60 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "label": "Kitchen Cleanup",
-      "description":  "Clean my dirty kitchen",
-      "category": "house",
-      "done": false
+      "label": "Add numbers to rows",
+      "description": "",
+      "category": "development",
+      "done": false,
+      "id": 2
     },
     {
-      "id": 2,
-      "label": "Taxes",
-      "description":  "Start doing my taxes and contact my accountant jhon for advice",
-      "category": "bureaucracy",
-      "done": "22-10-2019"
+      "label": "Disable edit of done items",
+      "description": "Remove the edit button on list view. Disable form edit when fetched task is marked as done.",
+      "category": "development",
+      "done": false,
+      "id": 3
+    },
+    {
+      "label": "Change 'done' field to timestamp",
+      "description": "Currently string is being used. This isn't ideal.",
+      "category": "development",
+      "done": false,
+      "id": 4
+    },
+    {
+      "label": "Add unit tests",
+      "description": "",
+      "category": "testing",
+      "done": false,
+      "id": 5
+    },
+    {
+      "label": "Add e2e tests",
+      "description": "",
+      "category": "testing",
+      "done": false,
+      "id": 6
+    },
+    {
+      "label": "Display 'No tasks' when zero tasks",
+      "description": "",
+      "category": "development",
+      "done": false,
+      "id": 7
+    },
+    {
+      "label": "Add notifications",
+      "description": "When task is added/updated/deleted. Both on success and on failure. Bootstrap toasts are a perfect fit for that.",
+      "category": "development",
+      "done": false,
+      "id": 8
+    },
+    {
+      "label": "Add 'Cancel' button to the form",
+      "description": "It should take you back to the list view.",
+      "category": "development",
+      "done": false,
+      "id": 9
     }
   ]
 }

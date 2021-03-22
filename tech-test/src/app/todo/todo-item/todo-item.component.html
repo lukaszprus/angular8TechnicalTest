@@ -1,0 +1,27 @@
+<div class="todo">
+  <div class="heading">
+    <div class="actions">
+      <input type="checkbox" [(ngModel)]="done">
+      <a [routerLink]="[task.id, 'edit']">Edit</a>
+      <button type="button" (click)="delete()">Delete</button>
+      <button type="button" (click)="expanded = !expanded">{{ expanded ? 'Collapse' : 'Expand' }}</button>
+    </div>
+
+    <span [class.done]="task.done !== false">{{ task.label }}</span>
+  </div>
+
+  <div class="body" *ngIf="expanded">
+    <dl>
+      <dt>Description</dt>
+      <dd>{{ task.description }}</dd>
+
+      <dt>Category</dt>
+      <dd>{{ task.category }}</dd>
+
+      <ng-container *ngIf="task.done !== false">
+        <dt>Done</dt>
+        <dd>{{ task.done }}</dd>
+      </ng-container>
+    </dl>
+  </div>
+</div>

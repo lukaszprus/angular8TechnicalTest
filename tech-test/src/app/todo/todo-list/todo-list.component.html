@@ -1,0 +1,7 @@
+<h3>Todos</h3>
+
+<a routerLink="add">Add todo</a>
+
+<div>Category filter: <input [(ngModel)]="term"></div>
+
+<app-todo-item *ngFor="let task of tasks | filterProperty : 'category' : term" [task]="task" (delete)="delete($event)"></app-todo-item>

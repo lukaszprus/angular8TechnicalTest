@@ -1,0 +1,21 @@
+.todo {
+  border: 1px solid #a52a2a;
+  margin: 10px;;
+
+  .heading {
+    background-color: lightgreen;
+    padding: 10px;
+  }
+
+  .body {
+    padding: 10px;
+  }
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.actions {
+  float: right;
+}
